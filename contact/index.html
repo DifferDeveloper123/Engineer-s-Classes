@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | The Engineer's Classes</title>
+  <link rel="icon" type="image/x-png" href="/Assets/Logo shadowless.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+
+<body style="overflow: hidden;">
+  
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+ 
+  <script>
+    const firebaseConfig = {
+   apiKey: "AIzaSyATLyVUiPP8ZFeoxU6qi-ucRv1uK7ML5Ow",
+   authDomain: "engineer-s-classes.firebaseapp.com",
+   databaseURL: "https://engineer-s-classes-default-rtdb.firebaseio.com",
+   projectId: "engineer-s-classes",
+   storageBucket: "engineer-s-classes.appspot.com",
+   messagingSenderId: "687410527288",
+   appId: "1:687410527288:web:144dfee32606adffc63acd"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  
+ <div id="wl" class="wl"></div>
+ <div id="loader" class="loader"></div>
+
+  <div class="header">
+    <div  onclick="window.open('/','_self');" class="left-header">
+      <img src="/Assets/Logo[Transparent+White].svg" width="100px">
+      <div class="vl"></div>
+      <h2> The Engineer's Classes</h2>
+    </div>
+    <nav id="nav">
+      <a href="/about/">About Us</a>
+      <!-- <a href="/classes/">Classes</a> -->
+      <a id="wsheet" class="hide" href="/Worksheets/">Worksheet</a>
+      <a class="hide" id="sent" href="/Student/">Students</a>
+      <a href="javascript:void(0)"><span style="color: #F2CC7B; font-weight: bold;">Contact</span></a>
+      <a class="maton" id="sign" href="/Login/">Signin</a>
+      <a id="propic" class="hide" href="/Profile/"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt=""></a>
+    </nav>
+  </div>
+  <h2 class="fi" style="margin-top: -90px;">Contact <span style="color: #4200AD;">Us</span></h2>
+  <hr>
+  <div id="error_message">
+  </div>
+
+
+  <div class="form" id="center">
+    <!-- Inputs -->
+    <h2 class="fi">Contact <span style="color: #4200AD;">Us</span></h2>
+    
+    <div class="input-part">
+      <input type="text" id="name" placeholder="Your name">
+    </div>
+    <div class="input-part">
+      <input type="text" id="wname" placeholder="Your ward's name">
+    </div>
+    <div class="input-part">
+      <input type="text" id="email" placeholder="Email">
+    </div>
+    <div class="input-part">
+      <input type="text" id="subject" placeholder="Subject">
+    </div>
+    <div class="input-part">
+      <input type="text" id="message" placeholder="Your Message">
+    </div>
+  </div>
+  <center>
+    <div class="btn">
+      <input type="submit" onclick="check();">
+    </div>
+  </center>
+  </div>
+
+  
+  <footer>
+    <div class="fotti">
+        <div class="footer_wrap">
+            <h2>Contact with us</h2>
+            <div class="footer_social">
+              <a class="bg3" href="tel:+919870939480"><i class="fa fa-phone"></i></a>
+              <a class="bg1" href="mailto:classes.engineer@gmail.com"><i class="fa fa-envelope"></i></a>
+              <a class="bg3" href="tel:+917417809186"><i class="fa fa-phone"></i></a>
+              <a class="bg2" onclick="window.open(`https://maps.app.goo.gl/GnVKroYZ6i38aJ9e6`);"><i class="fa fa-map-marker"></i></a>
+                <a class="bg3" href="tel:+919559271190"><i class="fa fa-phone"></i></a>
+              </div>
+            <ul style="margin-left:-40px;">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About Us</a></li>
+                <li><a href="/contact/">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="fotti">
+        <div class="footer_copyright">
+          <p class="devil">For any error in the webpage, contact the<span onclick="window.open('mailto:developerrajvsr@gmail.com')" style="color: rgb(207, 207, 207);">developer</span></p>
+          <p>2024 &#169 The Engineer's Classes</p>
+        </div>
+    </div>
+</footer>
+  <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>

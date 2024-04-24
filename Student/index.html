@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Management | The Engineer's Classes</title>
+    <link rel="icon" type="image/x-png" href="/Assets/Logo shadowless.png">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="/CDN/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="head" class="header hide">
+      <div class="left-header">
+        <h2> The Engineer's Classes</h2>
+      </div>
+    </div>
+
+    <!-- Create student button -->
+    <button class="create hide" id="createStudentBtn" onclick="showCreateForm()">
+        <i class="fas fa-plus ico"></i>
+        Create Student
+    </button>
+<div id="ol" class="ol" style="display: none;"></div>
+    <div id="createStudentForm" class="creator" style="display: none;">
+        <div class="container">
+            <h2>Create New Student</h2>
+            <form id="studentForm">
+                
+  <div class="input-container">
+    <div class="input-part">
+      <input type="text" id="studentName" placeholder="Student's Name" required>
+    </div>
+    <div class="input-part">
+      <input type="text" id="parentName" placeholder="Father's Name" required>
+    </div>
+    <div class="input-part">
+      <input type="number" id="phoneNumber" placeholder="Mobile No." required>
+    </div>
+  </div>
+                <button class="creaton" type="submit">Create</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="stus" class="container hide">
+        <!-- Student list -->
+        <div class="student-list" id="studentList">
+            <!-- Student list will be dynamically populated here -->
+        </div>
+    </div>
+
+    <div id="fro" class="opener">
+        <h1>Select the class</h1>
+        <div class="dropdown">
+        <input type="checkbox" id="dropdown">
+      
+        <label class="dropdown__face" for="dropdown">
+          <div id="drop" class="dropdown__text">Classes</div>
+      
+          <div class="dropdown__arrow"></div>
+        </label>
+      
+        <ul class="dropdown__items">
+          <li onclick="setDrop(9)">9th</li>
+          <li onclick="setDrop(10)">10th</li>
+          <li onclick="setDrop(11)">11th</li>
+          <li onclick="setDrop(12)">12th</li>
+        </ul>
+      </div>
+      
+      <svg>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </svg>
+      <div id="nnxt" onclick="setClass()" class="next hide">Next <i class="fa fa-arrow-right"></i></div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+   
+  <script src="/CDN/script.js" type="text/javascript"></script>
+  <script src="./script.js" type="text/javascript"></script>
+</body>
+</html>

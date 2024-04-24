@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | The Engineer's Classes</title>
+    <link rel="icon" type="image/x-png" href="/Assets/Logo shadowless.png">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+ <!-- Firebase -->
+ <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+ <script>
+   const firebaseConfig = {
+  apiKey: "AIzaSyATLyVUiPP8ZFeoxU6qi-ucRv1uK7ML5Ow",
+  authDomain: "engineer-s-classes.firebaseapp.com",
+  databaseURL: "https://engineer-s-classes-default-rtdb.firebaseio.com",
+  projectId: "engineer-s-classes",
+  storageBucket: "engineer-s-classes.appspot.com",
+  messagingSenderId: "687410527288",
+  appId: "1:687410527288:web:144dfee32606adffc63acd"
+   };
+   // Initialize Firebase
+   firebase.initializeApp(firebaseConfig);
+ </script>
+
+<div id="wl" class="wl"></div>
+<div id="loader" class="loader"></div>
+
+
+<div class="header">
+  <div  onclick="window.open('/','_self');" class="left-header">
+    <img src="/Assets/Logo[Transparent+White].svg" width="100px">
+    <div class="vl"></div>
+    <h2> The Engineer's Classes</h2>
+  </div>
+  <nav>
+    <a href="/about/">About Us</a>
+    <!-- <a href="/classes/">Classes</a> -->
+    <a id="wsheet" href="/Worksheets/">Worksheet</a>
+    <a href="/contact/">Contact</a>
+    <a id="propic" href="javascript:void(0)"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt=""></a>
+  </nav>
+</div>
+
+<div class="layout">
+    <div class="profile">
+      <div class="profile__picture"><img width="50px" src="https://www.svgrepo.com/show/408429/user-person-profile-block-account-circle.svg"/></div>
+      <div class="profile__header">
+        <div class="profile__account">
+          <h4 class="profile__username"><span id="usnam"></span></h4>
+        </div>
+        <div class="profile__edit"><a class="profile__button" onclick="log();">Logout</a></div>
+      </div>
+      <div class="profile__stats">
+        <div class="profile__stat">
+          <div class="profile__icon profile__icon--gold"><i class="fas fa-wallet"></i></div>
+          <div class="profile__value"><span id="num"></span>
+            <div class="profile__key">Mobile No.</div>
+          </div>
+        </div>
+        <div class="profile__stat">
+          <div class="profile__icon profile__icon--blue"><i class="fas fa-signal"></i></div>
+          <div class="profile__value"><span id="subs"></span>
+            <div class="profile__key">Subjects</div>
+          </div>
+        </div>
+        <div class="profile__stat">
+          <div class="profile__icon profile__icon--pink"><i class="fas fa-heart"></i></div>
+          <div class="profile__value"><span id="class"></span>
+            <div class="profile__key">Grade</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="ol" class="ol invi"></div>
+  
+  <div id="conta" class="creator hide">
+    <div class="container">
+        <h2>Are you sure you want to log out?</h2>
+        <h5>On logging out, your account will get deleted and you will not be able to access your account.</h5>
+        <button class="creaton y" onclick="out()">Yes</button>
+        <button class="creaton" onclick="gol()">No</button>
+    </div>
+</div>
+  <script src="./scipt.js" type="text/javascript"></script>
+</body>
+</html>

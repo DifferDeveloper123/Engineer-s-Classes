@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Child Cards</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  /* Common styles for both containers */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+  }
+  .user-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .profile-photo img {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  .person-info p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .msg-icon svg {
+    width: 34px;
+    height: 34px;
+    fill: #000;
+  }
+  /* Styles for PC */
+  .nearby-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 666px;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 24px 74px -20px rgba(130, 148, 173, 0.44);
+  }
+  .card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 24px 74px -20px rgba(130, 148, 173, 0.44);
+    margin-bottom: 20px;
+  }
+  .card .photo p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .add {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: auto;
+    transition: transform 0.3s;
+  }
+  .add:hover {
+    transform: scale(1.1);
+  }
+  /* Styles for Mobile */
+  .contact-container {
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 24px 74px -20px rgba(130, 148, 173, 0.44);
+    margin-top: 20px;
+  }
+  .view {
+    width: 100%;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  .view:hover {
+    transform: scale(1.1);
+  }
+</style>
+</head>
+<body>
+<div class="nearby-container">
+  <div class="header">
+    <h3>Nearby Friends</h3>
+    <span><a href="#">See all</a></span>
+  </div>
+  <div class="user-card-wrap">
+    <div class="card">
+      <div class="photo">
+        <img src="" alt="Profile Photo">
+        <p>Josh</p>
+      </div>
+      <button class="add"><span>+</span></button>
+    </div>
+    <!-- Add more card elements here -->
+  </div>
+</div>
+
+<div class="contact-container">
+  <div class="header">
+    <span>Contacts</span>
+    <span>43</span>
+  </div>
+  <div class="user-list">
+    <div class="user-row">
+      <div class="profile-photo">
+        <img src="" alt="Profile Photo">
+      </div>
+      <div class="person-info">
+        <p>Lise</p>
+        <p>Bergen, Norway</p>
+      </div>
+      <div class="msg-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M5.5 20.5v-9c0-.3.1-.5.3-.7l2.8-2.8c.2-.2.4-.3.7-.3h9c.6 0 1 .4 1 1v10c0 .6-.4 1-1 1H8c-.6 0-1-.4-1-1zm12-12h-2V5h2v3zm0 2h-2v2h2v-2zm-4-2H9V5h4v3zm2 8h-2v-5H9V7h10v11z"/>
+        </svg>
+      </div>
+    </div>
+    <!-- Add more user rows here -->
+  </div>
+  <button class="view">View everyone</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Login | The Engineer's Classes</title>
+  <link rel="icon" type="image/x-png" href="/Assets/Logo shadowless.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+
+ <!-- Firebase -->
+ <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+ <script>
+   const firebaseConfig = {
+  apiKey: "AIzaSyATLyVUiPP8ZFeoxU6qi-ucRv1uK7ML5Ow",
+  authDomain: "engineer-s-classes.firebaseapp.com",
+  databaseURL: "https://engineer-s-classes-default-rtdb.firebaseio.com",
+  projectId: "engineer-s-classes",
+  storageBucket: "engineer-s-classes.appspot.com",
+  messagingSenderId: "687410527288",
+  appId: "1:687410527288:web:144dfee32606adffc63acd"
+   };
+   // Initialize Firebase
+   firebase.initializeApp(firebaseConfig);
+ </script>
+  <!-- <div class="header">
+    <div class="body">Sign in</div>
+  </div>
+
+  <h2 style="margin-top: 100px; text-align: center;">Sign in to your account</h2>
+  <h6 style="margin-top: -20px; text-align: center; font-weight: 500;">Please enter info to signin</h6> -->
+  <!-- Inputs -->
+  <!-- <div class="input-container">
+    <div class="input-part iconInp">
+      <input type="text" id="email-container" placeholder="Email">
+      <i id="email-container-icon" class="fal fa-envelope"></i>
+    </div>
+
+    <div class="input-part iconInp">
+      <input type="text" id="password-container" placeholder="Password">
+      <i id="password-container-icon" class="fal fa-lock-alt"></i>
+    </div>
+  </div> -->
+  <div class="container">
+    <div class="card">
+      <h2>Sign in</h2>
+            <div class="inputBox">
+                <input id="email-container" placeholder="Mobile Number">
+            </div>
+            <div class="inputBox">
+                <input type="text" id="password-container" placeholder="Password">
+            </div>
+            <div class="btnBox">
+              <center>
+                <button class="btn" onclick="Checkout();">
+                Log In
+            </button></center>
+            </div>
+    </div>
+</div>
+
+  <div class="er-in" id="error">Either mobile number or password is incorrect</div>
+  <div class="er-in" id="errormains">The account do not exists</div>
+
+   <div class="er-in" id="alerror">You are alread logged in to another device</div>
+
+  <!-- <button onclick="Checkout();" class="btn-hover color-9">Sign in</button> -->
+
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+  <script src="/CDN/script.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

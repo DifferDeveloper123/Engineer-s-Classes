@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worksheets | The Engineer's Classes</title>
+<link rel="icon" type="image/x-png" href="/Assets/Logo shadowless.png">
+<link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="/CDN/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  
+  <div id="wl" class="wl"></div>
+  <div id="loader" class="loader"></div>
+
+    <div id="head" class="header hide">
+        <div class="left-header">
+          <h2> The Engineer's Classes</h2>
+        </div>
+      </div>
+
+      <div id="fro" class="opener">
+        <h1>Select a subject</h1>
+        <div class="dropdown">
+        <input type="checkbox" id="dropdown">
+      
+        <label class="dropdown__face" for="dropdown">
+          <div id="drop" class="dropdown__text">Subjects</div>
+      
+          <div class="dropdown__arrow"></div>
+        </label>
+      
+        <ul class="dropdown__items">
+          <li id="B" onclick="setDrop('Biology', 'B')">Biology</li>
+          <li id="C" onclick="setDrop('Chemistry', 'C')">Chemistry</li>
+          <li onclick="setDrop('English', 'E')">English</li>
+          <li onclick="setDrop('Mathematics', 'M')">Mathematics</li>
+          <li id="P" onclick="setDrop('Physics', 'P')">Physics</li>
+        </ul>
+      </div>
+      
+      <svg>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </svg>
+      <div id="nnxt" class="next hide">Next <i class="fa fa-arrow-right"></i></div>
+    </div>
+
+    <div class="er-in" id="donotexist">This subject is not in your subscription</div>
+<div id="pdfContainer" class="hide">
+    <div id="pdfList"></div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="/CDN/script.js" type="text/javascript"></script>
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>

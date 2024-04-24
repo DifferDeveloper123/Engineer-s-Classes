@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Engineer's Classes</title>
+  <link rel="icon" type="image/x-png" href="/Assets/Logo shadowless.png">
+  <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+  
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"  type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"  type="text/javascript"></script>
+</head>
+
+<body style="overflow: hidden;">
+  
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+ 
+  <script>
+    const firebaseConfig = {
+   apiKey: "AIzaSyATLyVUiPP8ZFeoxU6qi-ucRv1uK7ML5Ow",
+   authDomain: "engineer-s-classes.firebaseapp.com",
+   databaseURL: "https://engineer-s-classes-default-rtdb.firebaseio.com",
+   projectId: "engineer-s-classes",
+   storageBucket: "engineer-s-classes.appspot.com",
+   messagingSenderId: "687410527288",
+   appId: "1:687410527288:web:144dfee32606adffc63acd"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  
+ <div id="wl" class="wl"></div>
+ <div id="loader" class="loader"></div>
+ 
+  <div class="header">
+    <div class="left-header">
+      <img src="/Assets/Logo[Transparent+White].svg" width="100px">
+      <div class="vl"></div>
+      <h2> The Engineer's Classes</h2>
+    </div>
+    <nav id="nav">
+      <a href="/about/">About Us</a>
+      <!-- <a href="/classes/">Classes</a> -->
+      <a id="wsheet" class="hide" href="/Worksheets/">Worksheet</a>
+      <a class="hide" id="sent" href="/Student/">Students</a>
+      <a href="/contact/">Contact</a>
+      <a class="maton" id="sign" href="/Login/">Signin</a>
+      <a id="propic" class="hide" href="/Profile/"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt=""></a>
+    </nav>
+  </div>
+  <div class="conta">
+  <div class="rounded-box">
+    <strong>
+      <h3><span style="color: #E4118C;">Thought</span>s sculpt destiny: Mould <span style="color: #E4118C;">wisely</span></h3>
+    </strong>
+    <h4>WITH ENGINEER'S CLASSES</h4>
+    <h5>Embark on a transformative journey at Engineer's Classes, where we blend excellence and education across English, Mathematics, Science, and more. Let's unlock your full potential together!</h5>
+  <div class="butt">Join Now</div>
+  </div>
+  <div class="book"> <img width="220px" src="/Assets/Books.svg"></div>
+</div>
+
+<h1 class="h1">Our Faculty</h1>
+<section class="services">
+  <div class="circle--slider">
+    <div class="rotate--circle">
+      <ul class="circle--rotate" id="circle--rotate">
+        <li class="block">
+          <div class="icon"><i class="fa fa-radiation"></i><span> </span></div>
+        </li>
+        <li class="block">
+          <div class="icon"><i class="fa fa-spell-check"></i><span> </span></div>
+        </li>
+        <li class="block">
+          <div class="icon"><i class="fa fa-calculator-alt" aria-hidden="true"></i><span> </span></div>
+        </li>
+        <li class="block">
+          <div class="icon"><i class="fa fa-atom-alt"></i><span> </span></div>
+        </li>
+        <li class="block">
+          <div class="icon"><i class="fa fa-biohazard"></i><span> </span></div>
+        </li>
+      </ul>
+      <div class="animate-wrapper">
+        <div class="animate">
+          <div class="animate-img">
+            <div class="animate-img__in" data-image="https://firebasestorage.googleapis.com/v0/b/engineer-s-classes.appspot.com/o/Teachers%2FWhatsApp%20Image%202024-04-13%20at%206.31.37%20AM.jpeg?alt=media&token=ddb5a260-c587-4372-a6b6-35b1aad9f81e">
+              <div class="animate-more">
+                <div class="animate-title">
+                  <h4>Mr. Anuj Dwivedi</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="animate">
+          <div class="animate-img">
+            <div class="animate-img__in" data-image="https://firebasestorage.googleapis.com/v0/b/engineer-s-classes.appspot.com/o/Teachers%2Fphoto_6131979793126767355_y.jpg?alt=media&token=033d5972-6bc4-4e74-9cfd-539179221f25">
+              <div class="animate-more">
+                <div class="animate-title">
+                  <h4>Mr. Prabhanjan Singh</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="animate">
+          <div class="animate-img">
+            <div class="animate-img__in" data-image="https://firebasestorage.googleapis.com/v0/b/engineer-s-classes.appspot.com/o/Teachers%2Fphoto_6131979793126767358_x.jpg?alt=media&token=ee37a839-820f-4b6b-9c40-800b0be30288">
+              <div class="animate-more">
+                <div class="animate-title">
+                  <h4>Er. Shikhar Patel</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="animate">
+          <div class="animate-img">
+            <div class="animate-img__in" data-image="https://firebasestorage.googleapis.com/v0/b/engineer-s-classes.appspot.com/o/Teachers%2FWhatsApp%20Image%202024-04-16%20at%208.18.43%20PM.jpeg?alt=media&token=fcc2031f-40e5-40ae-ba26-8cb98935644c">
+              <div class="animate-more">
+                <div class="animate-title">
+                  <h4>Mr. Vaibhav Pandey</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="animate">
+          <div class="animate-img">
+            <div class="animate-img__in" data-image="https://firebasestorage.googleapis.com/v0/b/engineer-s-classes.appspot.com/o/Teachers%2FWhatsApp%20Image%202024-04-21%20at%2010.03.06%20AM.jpeg?alt=media&token=d7a647e3-1793-42c4-98fe-60e5fad27339">
+              <div class="animate-more">
+                <div class="animate-title">
+                  <h4>Mr. Pushpendra Bhadauriya</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display:none;" class="prev hide"><span>PREV</span></div>
+      <div style="display:none;" class="next hide"><span>NEXT</span></div>
+    </div>
+  </div>
+</section>
+ 
+<h1 class="h1">Benefits of Joining Us</h1>
+
+<div class="bod">
+<div class="main"> 
+   <div class="card-basic">
+  <div class="card-header header-basic">
+    <h1>Lectures</h1>
+  </div>
+  <div class="card-body">
+    <!-- <p><h2>$5 / mo</h2></p> -->
+    <div class="card-element-hidden-basic">
+      <ul class="card-element-container">
+        <li class="card-element">Get <span style="color: #E4118C;">detailed explanation</span> of each topic.</li>
+        <li class="card-element"> </li>
+        <li class="card-element"> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="card-standard">
+  <div class="card-header header-standard">
+    <h1>Worksheets</h1>
+  </div>
+  <div class="card-body">
+    <div class="card-element-hidden-standard">
+      <ul class="card-element-container">
+        <li class="card-element">Get access to <span style="color: #E4118C;">50+ worksheets</span> to practice and make your concept more clear.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="card-standard">
+  <div class="card-header header-standard">
+    <h1>Standard</h1>
+  </div>
+  <div class="card-body">
+    <p><h2>$10 / mo</h2></p>
+    <div class="card-element-hidden-standard">
+      <ul class="card-element-container">
+        <li class="card-element">5 team members</li>
+        <li class="card-element">5GB storage</li>
+        <li class="card-element">2000 request per day</li>
+        <li class="card-element">40000 users</li>
+      </ul>
+    </div>
+  </div>
+</div> -->
+
+<div class="card-premium">
+  <div class="card-header header-premium">
+    <h1>Doubt Solving</h1>
+  </div>
+  <div class="card-body">
+    <div class="card-element-hidden-premium">
+      <ul class="card-element-container">
+        <li class="card-element">Get a comprehensive <span style="color: #E4118C;">doubt-solving</span> support from our faculties.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<footer>
+  <div class="fotti">
+      <div class="footer_wrap">
+          <h2>Contact with us</h2>
+          <div class="footer_social">
+            <a class="bg3" href="tel:+919870939480"><i class="fa fa-phone-alt"></i></a>
+            <a class="bg1" href="mailto:classes.engineer@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a class="bg3" href="tel:+917417809186"><i class="fa fa-phone-alt"></i></a>
+            <a class="bg2" onclick="window.open(`https://maps.app.goo.gl/GnVKroYZ6i38aJ9e6`);"><i class="fa fa-map-marker-alt"></i></a>
+              <a class="bg3" href="tel:+919559271190"><i class="fa fa-phone-alt"></i></a>
+            </div>
+          <ul style="margin-left:-40px;">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about/">About Us</a></li>
+              <li><a href="/contact/">Contact us</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="fotti">
+      <div class="footer_copyright">
+        <p class="devil">For any error in the webpage, contact the <span onclick="window.open('mailto:developerrajvsr@gmail.com')" style="color: rgb(207, 207, 207);">developer</span></p>
+        <p>2024 &#169 The Engineer's Classes</p>
+      </div>
+  </div>
+</footer>
+
+  <script src="/script.js" type="text/javascript"></script>
+  <script src="/sketch.js" type="text/javascript"></script>
+</body>
+
+</html>
